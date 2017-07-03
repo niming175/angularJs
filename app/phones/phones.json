@@ -1,0 +1,20 @@
+[{
+    "age": 13,
+    "id": "1001",
+    "name": "iphone 5",
+    "snippet": "this phone is iphone 5",
+    "imageUrl":"img/phones/show_01.jpg"
+}, {
+    "age": 14,
+    "id": "1002",
+    "name": "iphone 5S",
+    "snippet": "5代的升级版本，其最大的区别是添加了指纹功能",
+    "imageUrl":"img/phones/show_02.jpg"
+},{
+    "age": 15,
+    "id": "1003",
+    "name": "iphone 3gs",
+    "snippet": "很早之前的iphone",
+    "imageUrl":"img/phones/show_03.jpg"
+}
+] 

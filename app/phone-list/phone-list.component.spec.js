@@ -1,7 +1,7 @@
 describe('phoneList', function() {
-    //Load the module that contains the 'phoneList' compinent before each test
+    //测试前加载‘phoneList’模块
     beforeEach(module('phoneList'));
-    //test the controller
+    //测试控制器
     describe('PhoneListController', function() {
         var ctrl;
 
@@ -9,12 +9,12 @@ describe('phoneList', function() {
             ctrl = $componentController('phoneList');
         }));
 
-        it('should create a “phone” model with 3 phone', function() {
-            expect(ctrl.phones.length).toBe(3);
+        it('should create a “phone” model with 4 phone', function() {
+            expect(ctrl.phones.length).toBe(4);
         });
 
         it('should set a default value for the "orferProp" model', function() {
             expect(ctrl.orderProp).toBe('age');
         });
     });
-})
+});

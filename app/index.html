@@ -1,33 +1,50 @@
 <!DOCTYPE html>
 <html lang="en" ng-app="phonecatApp">
+
 <head>
-	<meta charset="UTF-8">
-	<title>My Html File</title>
-	<link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.css" />
-  <link rel="stylesheet" href="app.css" />
-	<script src="/bower_components/angular/angular.min.js"></script>
-	<!-- <script src="app.js"></script> -->
-  <script src="app.module.js"></script>
-  <script src="phone-list/phone-list.module.js"></script>
-  <script src="phone-list/phone-list.component.js"></script>
+    <meta charset="UTF-8">
+    <title>My Html File</title>
+    <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="app.css" />
+    <script src="/bower_components/angular/angular.min.js"></script>
+    <!-- <script src="app.js"></script> -->
+    <script src="app.module.js"></script>
+    <script src="phone-list/phone-list.module.js"></script>
+    <script src="phone-list/phone-list.component.js"></script>
 </head>
+
 <body>
-	<p>Total number of phone</p>
-	<!-- <p>Nothing here {{'yet' + '!'}}</p>
-
-	<ui>
-		<li ng-repeat="phone in phones">
-			<span>{{phone.name}}</span>
-			<p>{{phone.snippet}}</p>
-		</li>
-	</ui>
-	<greet-user></greet-user> -->
-
-	<h2>使用组件</h2>
-
-	<phone-list></phone-list>
-
-</div>        
-	</div>
+    <div class="jumbotron">
+        <h1 class="text-center">there is some about iphone</h1>
+    </div>
+    <div class="container">
+        <p>Total number of phone</p>
+        <!-- <p>Nothing here {{'yet' + '!'}}</p>
+    
+    <ui>
+      <li ng-repeat="phone in phones">
+        <span>{{phone.name}}</span>
+        <p>{{phone.snippet}}</p>
+      </li>
+    </ui>
+    <greet-user></greet-user> -->
+        <h2>使用组件</h2>
+        <phone-list></phone-list>
+        <br>
+        <h2 class="text-center">XHR和依赖注入</h2>
+        <p>一个真实的应用程序不会只有三条数据，也不会直接写到前端代码中，所以我们会使用AngularJS的内置服务$http从服务器中获取更多的数据，并使用依赖注入（dependency injection）为phonelist组件控制器提供服务。</p>
+        <br>
+        <h2 class="text-center">$前缀命名规则</h2>
+        <p>Angula的内置服务service、作用域scope和一些其它的API都有一个$前缀。该前缀用于Angular提供的服务，所以我们自定义服务和数据模型的时候最好别用$前缀，以免发生命名冲突。另外，$$前缀用于私有属性，无法访问或修改。</p>
+        <br>
+        <h2>路由和多视图</h2>
+        <p>
+          这一步，我们会学习如何创建布局模板，如何利用Angular路由模块（ngRoute）实现多视图。
+当你在浏览器中输入/index.html。会重定向到/index.html#!/phones并显示手机列表。当点击手机链接时，会转到手机详情页面。
+        </p>
+    </div>
+    </div>
+    </div>
 </body>
+
 </html>

@@ -1,4 +1,19 @@
 body {
   padding-top: 20px;
 }
-
+.phone-list{
+	padding: 15px;
+	border-bottom: 1px solid #ccc;
+}
+.thumb img{
+	width: 200px;
+	height: auto;
+}
+.phone-name{
+	font-size: 20px;
+	text-underline-position: none;
+	font-weight: 600;
+}
+.phone-text{
+	margin-top: 15px;
+}
