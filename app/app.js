@@ -16,10 +16,10 @@ phonecatApp.controller('PhoneListController',function PhoneListController($scope
 	];
 });
 
-phonecatApp.component("greetUser",{
-	template: 'Hello {{$ctrl.user}}!',
-	controller:function GreetUserController(){
-		this.user = 'world';
+// phonecatApp.component("greetUser",{
+// 	template: 'Hello {{$ctrl.user}}!',
+// 	controller:function GreetUserController(){
+// 		this.user = 'world';
 		
-	}
-})
+// 	}
+// })

@@ -4,19 +4,19 @@
         <div class="col-md-2">
             <p>
                 Search:
-                <input ng-model="#ctrl.query" type="text">
+                <input ng-model="$ctrl.query" type="text">
             </p>
             <p>
-                Sort by:
+                <!-- Sort by:
                 <select name="" ng-model='$ctrl.orderProp'>
                     <option value="name" id="">Alphabetical</option>
                     <option value="age">Newest</option>
-                </select>
+                </select> -->
             </p>
         </div>
         <div class="col-md-10">
             <ul class="phones">
-                <li ng-repeat="phone in $ctrl.phones | filter:$ctrl.query | orderBy:$ctrl.orderProp">
+                <li ng-repeat="phone in $ctrl.phones | filter:$ctrl.query">
                     <span>{{phone.name}}</span>
                     <p>{{phone.snippet}}</p>
                 </li>

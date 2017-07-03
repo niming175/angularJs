@@ -3,14 +3,17 @@
 <head>
 	<meta charset="UTF-8">
 	<title>My Html File</title>
-	<link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
-	<script src="js/angular/angular.min.js"></script>
-	<script src="app.js"></script>
-	<link rel="stylesheet" href="css/app.css">
+	<link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.css" />
+  <link rel="stylesheet" href="app.css" />
+	<script src="/bower_components/angular/angular.min.js"></script>
+	<!-- <script src="app.js"></script> -->
+  <script src="app.module.js"></script>
+  <script src="phone-list/phone-list.module.js"></script>
+  <script src="phone-list/phone-list.component.js"></script>
 </head>
-<body ng-controller="PhoneListController">
+<body>
 	<p>Total number of phone</p>
-	<p>Nothing here {{'yet' + '!'}}</p>
+	<!-- <p>Nothing here {{'yet' + '!'}}</p>
 
 	<ui>
 		<li ng-repeat="phone in phones">
@@ -18,57 +21,12 @@
 			<p>{{phone.snippet}}</p>
 		</li>
 	</ui>
-	<greet-user></greet-user>
+	<greet-user></greet-user> -->
 
 	<h2>使用组件</h2>
-	<script src="phone-list/phone-list.component.js"></script>
+
 	<phone-list></phone-list>
 
-	<h2>css3的界面切换效果</h2>
-	<p>利用纯css3对页面进行切换</p>
-	<!-- <div class="contanter">
-  	<div class="ct" id="t1">  
-    <div class="ct" id="t2">  
-      <div class="ct" id="t3">  
-        <div class="ct" id="t4">  
-           <div class="ct" id="t5">  
-            <ul id="menu">  
-              <a href="#t1"><li class="icon fa fa-bolt" id="uno">test</li></a>  
-              <a href="#t2"><li class="icon fa fa-keyboard-o" id="dos">test1</li></a>  
-              <a href="#t3"><li class="icon fa fa-rocket" id="tres"></li>test2</a>  
-              <a href="#t4"><li class="icon fa fa-dribbble" id="cuatro"></li>test3</a>  
-              <a href="#t5"><li class="icon fa fa-plus-circle" id="cinco"></li>test4</a>  
-            </ul>  
-            <div class="page" id="p1">  
-               <section class="icon fa fa-bolt"><span class="title">Bolt</span><span class="hint">...</section>     
-            </div>  
-            <div class="page" id="p2">  
-              <section class="icon fa fa-keyboard-o"><span class="title">Type</span></section>  
-            </div>     
-            <div class="page" id="p3">  
-              <section class="icon fa fa-rocket"><span class="title">Rocket</span></section>  
-            </div>  
-            <div class="page" id="p4">  
-              <section class="icon fa fa-dribbble">  
-                <span class="title">Dribbble</span>  
-                <p class="hint">  
-                  Im ready to play, <span class="hint line-trough">invite me </span> find me   
-                </p>  
-                <p class="hint">...</p>  
-              </section>  
-            </div>    
-            <div class="page" id="p5">  
-              <section class="icon fa fa-plus-circle">  
-                <span class="title">More</span>  
-                <p class="hint">  
-                  ...   
-                </p>  
-              </section>  
-            </div>    
-          </div>  
-        </div>  
-      </div>  
-  </div> -->  
 </div>        
 	</div>
 </body>
