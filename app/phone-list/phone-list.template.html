@@ -20,8 +20,8 @@
         <div class="col-md-10">
             <ul class="phones list-unstyled">
                 <li ng-repeat="phone in $ctrl.phones | filter:$ctrl.query | orderBy:$ctrl.orderProp" class="phone-list">
-                    <a href="#/phones/{{phones.id}}" class="thumb"><img alt="{{phone.name}}" ng-src="{{phone.imageUrl}}"></a>
-                    <a href="#/phones/{{phone.id}}" class="phone-name">{{phone.name}}</a>
+                    <a href="#!/phones/{{phones.id}}" class="thumb"><img alt="{{phone.name}}" ng-src="{{phone.imageUrl}}"></a>
+                    <a href="#!/phones/{{phone.id}}" class="phone-name">{{phone.name}}</a>
                     <p class="phone-text">{{phone.snippet}}</p>
                 </li>
             </ul>

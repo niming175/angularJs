@@ -11,6 +11,16 @@
     <script src="app.module.js"></script>
     <script src="phone-list/phone-list.module.js"></script>
     <script src="phone-list/phone-list.component.js"></script>
+
+    <!--新添加的4个js文件-->
+    <!--提供路由-->
+    <script src="/bower_components/angular-route/angular-route.js"></script>
+    <!--配置主模块所需的提供者-->
+    <script src="app.config.js"></script>
+    <!--定义一个包含手机详情组件的新模块-->
+    <script src="phone-detail/phone-detail.module.js"></script>
+    <!--定义一个手机详情的组件-->
+    <script src="phone-detail/phone-detail.component.js"></script>
 </head>
 
 <body>
@@ -29,7 +39,9 @@
     </ui>
     <greet-user></greet-user> -->
         <h2>使用组件</h2>
-        <phone-list></phone-list>
+        <!--在第七步 依赖注入、模板步骤，注释掉-->
+        <!--  <phone-list></phone-list> -->
+        <div ng-view></div>
         <br>
         <h2 class="text-center">XHR和依赖注入</h2>
         <p>一个真实的应用程序不会只有三条数据，也不会直接写到前端代码中，所以我们会使用AngularJS的内置服务$http从服务器中获取更多的数据，并使用依赖注入（dependency injection）为phonelist组件控制器提供服务。</p>
@@ -39,8 +51,7 @@
         <br>
         <h2>路由和多视图</h2>
         <p>
-          这一步，我们会学习如何创建布局模板，如何利用Angular路由模块（ngRoute）实现多视图。
-当你在浏览器中输入/index.html。会重定向到/index.html#!/phones并显示手机列表。当点击手机链接时，会转到手机详情页面。
+            这一步，我们会学习如何创建布局模板，如何利用Angular路由模块（ngRoute）实现多视图。 当你在浏览器中输入/index.html。会重定向到/index.html#!/phones并显示手机列表。当点击手机链接时，会转到手机详情页面。
         </p>
     </div>
     </div>
