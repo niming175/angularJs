@@ -21,6 +21,10 @@
     <script src="phone-detail/phone-detail.module.js"></script>
     <!--定义一个手机详情的组件-->
     <script src="phone-detail/phone-detail.component.js"></script>
+
+    <!--自定义转换器-->
+    <script src="core/core.module.js"></script>
+    <script src="core/checkmark/checkmark.filter.js"></script>
 </head>
 
 <body>
@@ -53,7 +57,14 @@
         <p>
             这一步，我们会学习如何创建布局模板，如何利用Angular路由模块（ngRoute）实现多视图。 当你在浏览器中输入/index.html。会重定向到/index.html#!/phones并显示手机列表。当点击手机链接时，会转到手机详情页面。
         </p>
+        <div class="alert bg-info">
+        <h2>更多模板</h2>
+        <p>实现手机详情试图，当用户手机列表上的某一项时显示。我们将使用$http来获取我们的数据，并修改phoneDetail组件的模板</p>
+        <h3>组件控制器</h3>
+        <p>我们利用$http服务请求JSON文件，来增强手机详情组件的控制器。这与手机列表的控件控制器啊的工作原理相同</p>
     </div>
+    </div>
+    
     </div>
     </div>
 </body>

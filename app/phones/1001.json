@@ -1,0 +1,11 @@
+{
+	"name":"iphone 5",
+	"description":"这个是啥",
+	"images": ["./img/phones/show_01.jpg", "./img/phones/show_02.jpg"],
+	"Availability": [
+		"test",
+		"tset2"
+
+],
+	"connectivity"
+"additionalFeatures":"不知道这个是什么鬼"}
