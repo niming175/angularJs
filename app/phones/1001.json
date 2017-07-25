@@ -1,11 +1,14 @@
 {
-	"name":"iphone 5",
-	"description":"这个是啥",
-	"images": ["./img/phones/show_01.jpg", "./img/phones/show_02.jpg"],
-	"Availability": [
-		"test",
-		"tset2"
+    "name": "iphone 5",
+    "description": "这个是啥",
+    "images": [
+    	"./img/phones/1001/5s_01.png", "./img/phones/1001/5s_02.png","./img/phones/1001/5s_03.png"
+    ],
+    "Availability": [
+        "test",
+        "tset2"
 
-],
-	"connectivity"
-"additionalFeatures":"不知道这个是什么鬼"}
+    ],
+    "connectivity":"test",
+    "additionalFeatures": "不知道这个是什么鬼"
+}

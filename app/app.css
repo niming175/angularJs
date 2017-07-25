@@ -1,3 +1,4 @@
+li{list-style: none;}
 body {
   padding-top: 20px;
 }
@@ -16,4 +17,12 @@ body {
 }
 .phone-text{
 	margin-top: 15px;
+}
+
+#phone-detail .phone-thumbs img{
+ height: 230px;
+ width: 230px;
+}
+.phone-thumbs {
+	display:flex;
 }
