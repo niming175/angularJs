@@ -1,13 +1,12 @@
 /**
-* core Module
-*
-* Description
-*/
-angular.module('core').
-	filter('checkmark',function () {
-		// body...
-		return function(){
-			return input? '\u2713':'\u2718';
-		};
-		
-	})
+ * core Module
+ *
+ * Description
+ */
+angular.
+module('core').
+filter('checkmark', function() {
+    return function(input) {
+        return input ? '\u2713' : '\u2718';
+    };
+});

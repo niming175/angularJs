@@ -6,12 +6,16 @@
     <title>My Html File</title>
     <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.css" />
     <link rel="stylesheet" href="app.css" />
+    <link rel="stylesheet" href="app.animations.css" />
+    <!-- #14 引入jquery-->
+    <script src="bower_components/jquery/dist/jquery.js"></script>
     <script src="/bower_components/angular/angular.min.js"></script>
+    <!-- 增加AngularJS的动画支持-->
+    <script src="bower_components/angular-animate/angular-animate.js"></script>
     <!-- <script src="app.js"></script> -->
     <script src="app.module.js"></script>
     <script src="phone-list/phone-list.module.js"></script>
     <script src="phone-list/phone-list.component.js"></script>
-
     <!--新添加的4个js文件-->
     <!--提供路由-->
     <script src="/bower_components/angular-route/angular-route.js"></script>
@@ -21,10 +25,15 @@
     <script src="phone-detail/phone-detail.module.js"></script>
     <!--定义一个手机详情的组件-->
     <script src="phone-detail/phone-detail.component.js"></script>
-
     <!--自定义转换器-->
     <script src="core/core.module.js"></script>
     <script src="core/checkmark/checkmark.filter.js"></script>
+    <!--服务-->
+    <script type="text/javascript" src="/bower_components/angular-resource/angular-resource.min.js"></script>
+    <script src="core/phone/phone.module.js"></script>
+    <script src="core/phone/phone.service.js"></script>
+    <!-- 定义JS动画 -->
+    <script src="app.animations.js"></script>
 </head>
 
 <body>
@@ -58,13 +67,12 @@
             这一步，我们会学习如何创建布局模板，如何利用Angular路由模块（ngRoute）实现多视图。 当你在浏览器中输入/index.html。会重定向到/index.html#!/phones并显示手机列表。当点击手机链接时，会转到手机详情页面。
         </p>
         <div class="alert bg-info">
-        <h2>更多模板</h2>
-        <p>实现手机详情试图，当用户手机列表上的某一项时显示。我们将使用$http来获取我们的数据，并修改phoneDetail组件的模板</p>
-        <h3>组件控制器</h3>
-        <p>我们利用$http服务请求JSON文件，来增强手机详情组件的控制器。这与手机列表的控件控制器啊的工作原理相同</p>
+            <h2>更多模板</h2>
+            <p>实现手机详情试图，当用户手机列表上的某一项时显示。我们将使用$http来获取我们的数据，并修改phoneDetail组件的模板</p>
+            <h3>组件控制器</h3>
+            <p>我们利用$http服务请求JSON文件，来增强手机详情组件的控制器。这与手机列表的控件控制器啊的工作原理相同</p>
+        </div>
     </div>
-    </div>
-    
     </div>
     </div>
 </body>

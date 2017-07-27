@@ -7,7 +7,8 @@ angular.module('phonecatApp',[
 	'ngRoute', //增加ngRoute模块
 	'phoneList',
 	'phoneDetail',
-	'core'//step 10 加入core模块
+	'core',//step 10 加入core模块
+	'ngAnimate'//#14 加入动画模块
 	]);
 /*
 * phoneDetail 模块依赖与ngRouter模块：ngRoute提供$routeParams对象，并将$routeParams

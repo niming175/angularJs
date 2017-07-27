@@ -1,12 +1,16 @@
 <div class="alert bg-info">
     <h2>{{$ctrl.phone.name}}详细参数</h2>
     <hr>
-    <img src="{{$ctrl.phone.images[0]}}" class="phone" alt="">
+    <!-- <img src="{{$ctrl.phone.images[0]}}" class="phone" alt=""> -->
+    <!--#12 事件处理-->
+    <img ng-src="{{$ctrl.mainImageUrl}}" class="phone" alt="">
     <h1>{{$ctrl.phone.name}}</h1>
     <p>{{$ctrl.phone.description}}</p>
     <ul class="phone-thumbs">
         <li ng-repeat="img in $ctrl.phone.images">
-            <img ng-src="{{img}}" alt="">
+            <!-- <img ng-src="{{img}}" alt=""> -->
+            <!--#12 事件处理-->
+            <img ng-src="{{img}}" alt="" ng-click="$ctrl.setImage(img)">
         </li>
     </ul>
     <ul>
