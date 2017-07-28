@@ -1,0 +1,68 @@
+.phone-list-item.ng-enter, /*加入新的元素*/
+.phone-list-item.ng-leave, /*移除位置*/
+.phone-list-item.ng-move { /*改变位置*/
+    transition: 0.5s linear all;
+}
+
+.phone-list-item.ng-enter,
+.phone-list-item.ng-move {
+    height: 0;
+    opacity: 0;
+    overflow: hidden;
+}
+
+.phone-list-item.ng-enter.ng-enter-active,
+.phone-list-item.ng-move.ng-move-active {
+    height: 120px;
+    opacity: 1;
+}
+
+.phone-list-item.ng-leave {
+    opacity: 1;
+    overflow: hidden;
+}
+
+.phone-list-item.ng-leave.ng-leave-active {
+    height: 0;
+    opacity: 0;
+    padding-bottom: 0;
+    padding-top: 0;
+}
+
+.view-container {
+  position: relative;
+}
+
+.view-frame.ng-enter,
+.view-frame.ng-leave {
+  background: white;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.view-frame.ng-enter {
+  animation: 1s fade-in;
+  z-index: 100;
+}
+
+.view-frame.ng-leave {
+  animation: 1s fade-out;
+  z-index: 99;
+}
+
+@keyframes fade-in {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@keyframes fade-out {
+  from { opacity: 1; }
+  to   { opacity: 0; }
+}
+
+作者：minxuan
+链接：http://www.jianshu.com/p/7fa92782a6e0
+來源：简书
+著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。

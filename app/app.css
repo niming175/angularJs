@@ -1,28 +1,79 @@
-li{list-style: none;}
-body {
-  padding-top: 20px;
-}
-.phone-list{
-	padding: 15px;
-	border-bottom: 1px solid #ccc;
-}
-.thumb img{
-	width: 200px;
-	height: auto;
-}
-.phone-name{
-	font-size: 20px;
-	text-underline-position: none;
-	font-weight: 600;
-}
-.phone-text{
-	margin-top: 15px;
+li {
+    list-style: none;
 }
 
-#phone-detail .phone-thumbs img{
- height: 230px;
- width: 230px;
+body {
+    padding-top: 20px;
 }
+
+.phone-list {
+    padding: 15px;
+    border-bottom: 1px solid #ccc;
+}
+
+.thumb img {
+    width: 200px;
+    height: auto;
+}
+
+.phone-name {
+    font-size: 20px;
+    text-underline-position: none;
+    font-weight: 600;
+}
+
+.phone-text {
+    margin-top: 15px;
+}
+
 .phone-thumbs {
-	display:flex;
+    display: flex;
+    flex-wrap: wrap
+}
+
+.phone-thumbs .phone-img-div {
+    padding: 5px;
+    background: #fff;
+    border-radius: 3px;
+    margin-left: 5px;
+    height: 120px;
+    width: 120px;
+    cursor: pointer;
+}
+
+.phone-thumbs .phone-img-div img {
+    height: 100%;
+    width: 100%;
+}
+
+.phone {
+    background-color: white;
+    display: none;
+    float: left;
+    height: 100%;
+    width: 100%;
+}
+
+.phone:first-child {
+    display: block;
+}
+
+.phone-images {
+    background-color: white;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+    width: 400px;
+    padding: 0;
+}
+
+@media screen and (max-width: 768px) {
+	.phone-images{
+		width: 100%;
+	}
+	.phone-images img{
+		width: 100%;
+		height: auto;
+	}
+	
 }

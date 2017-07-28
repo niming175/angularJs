@@ -1,21 +1,31 @@
-<div class="alert bg-info">
+<div class="alert bg-info" id="hone-detail">
     <h2>{{$ctrl.phone.name}}详细参数</h2>
     <hr>
     <!-- <img src="{{$ctrl.phone.images[0]}}" class="phone" alt=""> -->
     <!--#12 事件处理-->
-    <img ng-src="{{$ctrl.mainImageUrl}}" class="phone" alt="">
-    <h1>{{$ctrl.phone.name}}</h1>
-    <p>{{$ctrl.phone.description}}</p>
-    <ul class="phone-thumbs">
-        <li ng-repeat="img in $ctrl.phone.images">
-            <!-- <img ng-src="{{img}}" alt=""> -->
-            <!--#12 事件处理-->
-            <img ng-src="{{img}}" alt="" ng-click="$ctrl.setImage(img)">
-        </li>
-    </ul>
+    <!--  <img ng-src="{{$ctrl.mainImageUrl}}" class="phone" alt=""> -->
+    <div class="row">
+        <div class="col-lg-5 col-md-6">
+            <div class="phone-images alert">
+                <img ng-src="{{img}}" class="phone" ng-class="{selected: img === $ctrl.mainImageUrl}" ng-repeat="img in $ctrl.phone.images" />
+            </div>
+        </div>
+        <div class="col-lg-7 col-md-6">
+            <h1>{{$ctrl.phone.name}}</h1>
+            <p>{{$ctrl.phone.description}}</p>
+            <div class="phone-thumbs">
+                <div ng-repeat="img in $ctrl.phone.images" class="phone-img-div">
+                    <!-- <img ng-src="{{img}}" alt=""> -->
+                    <!--#12 事件处理-->
+                    <img ng-src="{{img}}" alt="" ng-click="$ctrl.setImage(img)">
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
     <ul>
         <li>
-            <span>Availability and Networks</span>
+            <h3>特性与网络</h3>
             <dl>
                 <dt>Availability</dt>
                 <dd ng-repeat="availability in $ctrl.phone.Availability">{{availability}}</dd>
@@ -27,7 +37,8 @@
                 <dd>{{$ctrl.phone.connectivity.gps | checkmark}}</dd>
             </dl>
         </li>
-        <li><span>Aditional Features</span>
+        <li>
+            <h4>Aditional Features</h4>
             <dd>{{$ctrl.phone.additionalFeatures}}</dd>
         </li>
     </ul>

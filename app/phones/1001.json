@@ -1,14 +1,15 @@
 {
-    "name": "iphone 5",
-    "description": "这个是啥",
+    "name": "iphone 5s",
+    "description": "iphone 5s 的一些介绍",
     "images": [
     	"./img/phones/1001/5s_01.png", "./img/phones/1001/5s_02.png","./img/phones/1001/5s_03.png"
     ],
     "Availability": [
-        "test",
-        "tset2"
+        "轻便",
+        "小巧",
+        "好看"
 
     ],
     "connectivity":"test",
-    "additionalFeatures": "不知道这个是什么鬼"
+    "additionalFeatures": "特性：添加了指纹功能！比4代更加流畅"
 }
